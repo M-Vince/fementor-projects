@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+}
+
+body {
+    background-color: #f9eeff;
+    background-image: url('./assets/background-pattern-desktop.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.container {
+    margin: 200px auto;
+    padding: 2rem;
+    background-color: #fff;
+    width: 525px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    gap: 10px;
+}
+
+.title {
+    display: flex;
+    gap: 20px;
+}
+
+.title h1 {
+    font-size: 50px;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+}
+
+.button:not(:last-child) {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.question {
+    cursor: pointer;
+}
+
+.question p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+    font-weight: 600;
+}
+
+.description {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 300ms ease;
+}
+
+.description p {
+    padding-bottom: 1rem;
+    color: #9e93a0;
+    font-size: 14px;
+}
+
+.description.active {
+    display: block;
+    
+}
+
+.minus-icon {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-image: url('./assets/background-pattern-mobile.svg');
+    }
+
+    .container {
+        width: 350px;
+    }
+
+    .title h1 {
+        font-size: 30px;
+    }
+
+    .title .plus-icon {
+        width: 25px;
+    }
+
+    .description p {
+        font-size: 14.5px;
+    }
+
+
+}
