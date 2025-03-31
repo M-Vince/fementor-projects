@@ -1,0 +1,105 @@
+:root {
+    --bg-pale-blue: hsl(221, 100%, 96%);
+
+    --clr-primary-hsl-400: 252, 100%, 67%;
+    --clr-primary-hsl-500: 256, 72%, 46%;
+    --clr-secondary-hsl-400: 241, 81%, 54%;
+    --clr-secondary-hsl-500: 241, 72%, 46%;
+
+    --clr-neutral-hsl-100: 0, 0%, 100%;
+
+    --clr-primary-400: hsl(var(--clr-primary-hsl-400));
+    --clr-primary-500: hsl(var(--clr-primary-hsl-500));
+    --clr-secondary-400: hsl(var(--clr-secondary-hsl-400));
+
+    --gradient-primary: linear-gradient(
+      var(--clr-primary-400), 
+      var(--clr-secondary-400));
+
+    --gradient-to-transparent: linear-gradient(
+        var(--clr-primary-500),
+        hsl(var(--clr-secondary-hsl-500), 0));
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+body {
+    /* background-color: #ecf2ff; */
+    background-color: var(--bg-pale-blue);
+}
+
+.container {
+    margin: 10rem auto;
+    
+    width: 650px;
+    /* height: 500px; */
+    height: 100%;
+    /* padding: 3rem; */
+    background-color: white;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    border-radius: 30px;
+}
+
+.results-panel {
+    color: hsla(var(--clr-neutral-hsl-100), .7);
+    background: var(--gradient-primary);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 1.5rem 2rem;
+    border-radius: 30px;
+}
+
+.results-panel-title {
+    margin-bottom: 1rem;
+}
+
+.results-panel-percent {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background: var(--gradient-to-transparent);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.results-panel-percent h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.results-panel-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.results-panel-description h2 {
+    color: #fff;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.results-panel-description p {
+    width: 230px;
+    text-align: center;
+}
+
+

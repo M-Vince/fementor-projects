@@ -1,47 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Results summary component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
 
-  Your Result
-  76
-  of 100
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="results-panel">
+        <div class="results-panel-title">
+          <h2>Your Result</h2>
+        </div>  
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+        <div class="results-panel-percent gap-large">
+          <h1>76</h1>
+          <p>of 100</p>
+        </div>
 
-  Reaction
-  80 / 100
+        
+        <div class="results-panel-description">
+          <h2>Great</h2>
+          <p>
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+      </div>
 
-  Memory
-  92 / 100
+      <div class="summary-panel">
+        <h2>Summary</h2>
 
-  Verbal
-  61 / 100
+        <!-- <ul>
+            <li>
+              <p>Reaction 80 / 100</p>
+            </li>
 
-  Visual
-  72 / 100
+            <li>
+              <p>Memory 92 / 100</p>
+            </li>
 
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+            <li>
+              <p>Verbal 61 / 100</p>
+            </li>
+
+            <li>
+              <p>Visual 72 / 100</p>
+            </li>
+          </ul> -->
+
+        <div class="summary-panel-item">
+          <img src="" alt="">
+          <h3> Reaction  </h3>
+          <p> 80/100 </p>
+        </div>
+        <div class="summary-panel-item">
+          <img src="" alt="">
+          <h3> Memory </h3>
+          <p> 92 / 100 </p>
+        </div>
+        <div class="summary-panel-item">
+          <img src="" alt="">
+          <h3> Verbal </h3>
+          <p> 61 / 100 </p>
+        </div>
+        <div class="summary-panel-item">
+          <img src="" alt="">
+          <h3> Visual </h3>
+          <p> 72 / 100 </p>
+        </div>
+
+        
+
+        <button class="btn-continue">Continue</button>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/M-Vince">M-Vince</a>.
+    </div>
+    <script src="./app.js"></script>
+  </body>
 </html>
