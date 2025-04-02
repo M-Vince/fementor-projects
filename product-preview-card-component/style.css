@@ -1,0 +1,122 @@
+:root {
+    --clr-primary-green-500: hsl(158, 36%, 37%);
+    --clr-primary-green-700: hsl(158, 42%, 18%);
+
+    --clr-neutral-black: hsl(212, 21%, 14%);
+    --clr-neutral-grey: hsl(228, 12%, 48%);
+    --clr-neutral-cream: hsl(30, 38%, 92%);
+    --clr-neutral-white: hsl(0, 0%, 100%);
+
+    --ff-body: 'Montserrat', sans-serif;
+    --ff-title: 'Fraunces', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--clr-neutral-cream);
+    font-family: var(--ff-body);
+}
+
+.container {
+    margin: 3rem auto;
+    width: 25rem;
+    min-height: 100vh;
+    background-color: var(--clr-neutral-white);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.product-image {
+    width: inherit;
+}
+
+.product-image img{
+    /* border: 2px solid black; */
+    width: inherit;
+    height: 45vh;
+    object-fit: cover;
+    object-position: 0 50%;
+}
+
+.product-info {
+    padding: 2rem 2.25rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product-info-type {
+    letter-spacing: 4px;
+    font-weight: 500;
+    color: var(--clr-neutral-grey);
+}
+
+.product-info h1 {
+    font-family: var(--ff-title);
+    color: var(--clr-neutral-black);
+}
+
+.product-info p {
+    color: var(--clr-neutral-grey);
+    font-size: 14px;
+    line-height: 2.25;
+}
+
+.product-info-price {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.product-info-price span:first-child {
+    color: var(--clr-primary-green-500);
+    font-family: var(--ff-title);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.product-info-price span:last-child {
+    color: var(--clr-neutral-grey);
+    font-family: var(--ff-title);
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+.btn-add {
+    height: 50px;
+    color: var(--clr-neutral-white);
+    background-color: var(--clr-primary-green-500);
+    border-radius: 10px;
+    font-weight: 700;
+    outline: none;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .75rem;
+}
+
+.btn-add[data-icon="shopping-cart"]::before {
+    content: "";
+    background-image: url(./images/icon-cart.svg);
+    width: 15px;
+    height: 16px;
+}
+
+.btn-add:hover {
+    background-color: hsl(158, 36%, 44%);;
+}
+
+.btn-add:active {
+    background-color: var(--clr-primary-green-700);
+}
