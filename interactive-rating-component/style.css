@@ -93,6 +93,7 @@ p {
 .btn-rate:hover {
     background-color: var(--clr-primary-orange-500);
     color: var(--clr-neutral-grey-900);
+    cursor: pointer;
 }
 
 .btn-rate:focus {
@@ -104,6 +105,10 @@ p {
     border-radius: 10px;
     background-color: var(--clr-primary-orange-500);
     font-weight: 700;
+}
+
+.btn-submit:hover {
+    cursor: pointer;
 }
 
 /* Thank You Container */
