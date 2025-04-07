@@ -79,6 +79,16 @@ p {
     border-radius: 50%;
     color: var(--clr-neutral-grey-500);
     background-color: hsl(215, 18%, 19%);
+    font-weight: 700;
+}
+
+.btn-rate:hover {
+    background-color: var(--clr-primary-orange-500);
+    color: var(--clr-neutral-grey-900);
+}
+
+.btn-rate:focus {
+    background-color: var(--clr-neutral-white);
 }
 
 .btn-submit {
@@ -86,5 +96,25 @@ p {
     border-radius: 10px;
     background-color: var(--clr-primary-orange-500);
     font-weight: 700;
+}
+
+/* Thank You Container */
+.thank-you {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.thank-you span {
+    background-color: hsl(215, 18%, 19%);
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    color: var(--clr-primary-orange-500);
+}
+
+.thank-you p {
+    text-align: center;
 }
 
