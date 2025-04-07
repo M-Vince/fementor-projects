@@ -109,12 +109,16 @@ p {
 .thank-you span {
     background-color: hsl(215, 18%, 19%);
     border-radius: 20px;
-    padding: 10px 20px;
+    padding: 10px 20px 7.5px;
     margin-bottom: 20px;
     color: var(--clr-primary-orange-500);
 }
 
 .thank-you p {
     text-align: center;
+}
+
+.hidden {
+    display: none;
 }
 
